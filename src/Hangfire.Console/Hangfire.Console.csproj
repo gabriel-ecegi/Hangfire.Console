@@ -4,7 +4,7 @@
     <AssemblyTitle>Hangfire.Console</AssemblyTitle>
     <VersionPrefix>1.4.2</VersionPrefix>
     <Authors>Alexey Skalozub</Authors>
-    <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Hangfire.Console</AssemblyName>
@@ -115,8 +115,8 @@
     <EmbeddedResource Include="Resources\*" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Hangfire.Core" Version="1.6.0" />
-    <PackageReference Include="JetBrains.Annotations" Version="11.0.0" PrivateAssets="All" />
+    <PackageReference Include="Hangfire.Core" Version="1.8.5" />
+    <PackageReference Include="JetBrains.Annotations" Version="2023.2.0" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
     <Reference Include="System" />
