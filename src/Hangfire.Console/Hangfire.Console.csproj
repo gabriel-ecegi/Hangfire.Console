@@ -2,13 +2,13 @@
   <PropertyGroup>
     <Description>Job console for Hangfire</Description>
     <AssemblyTitle>Hangfire.Console</AssemblyTitle>
-    <VersionPrefix>2.0.0</VersionPrefix>
+    <VersionPrefix>2.0.4</VersionPrefix>
     <Authors>Blogic</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Hangfire.Console</AssemblyName>
-    <PackageId>Hangfire.Console2</PackageId>
+    <PackageId>Blogic.Hangfire.Console</PackageId>
     <PackageTags>hangfire;console;logging</PackageTags>
     <PackageReleaseNotes>History:
       v2.0.0
@@ -106,17 +106,21 @@
       v1.0.0:
       • Initial release
     </PackageReleaseNotes>
-    <PackageIcon>https://raw.githubusercontent.com/gabriel-ecegi/Hangfire.Console/master/hangfire.console.png</PackageIcon>
-    <PackageLicense>https://raw.githubusercontent.com/gabriel-ecegi/Hangfire.Console/master/LICENSE.md</PackageLicense>
+    <!--<PackageIcon>https://raw.githubusercontent.com/gabriel-ecegi/Hangfire.Console/master/hangfire.console.png</PackageIcon>-->
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/pieceofsummer/Hangfire.Console</RepositoryUrl>
+    <RepositoryUrl>https://github.com/gabriel-ecegi/Hangfire.Console</RepositoryUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\*" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    <None Include="..\..\LICENSE.md" Pack="true" PackagePath="\" />
+
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Hangfire.Core" Version="1.8.5" />
